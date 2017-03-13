@@ -7,3 +7,49 @@ html, body {
   line-height: 30px;
   color: #444444;
   font-weight: normal;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #000000;
+  background-color: #ffe27f;
+  width: 1160px;
+  min-height: 299px;
+}
+
+.main-header h1 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 54px;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  transform: translateY(-54%);
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 52px 60px;
+
+}
+
+.site-search input {
+
+}
+
+.header-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+}
