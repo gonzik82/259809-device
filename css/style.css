@@ -29,27 +29,184 @@ html, body {
   margin: 0;
   position: absolute;
   top: 0;
-  left: 54px;
+  left: 56px;
+  font-family: gilroy;
+  font-weight: bold;
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
-  transform: translateY(-54%);
+  transform: translateY(-49%);
 }
 
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 52px 60px;
+  padding: 33px 60px;
 
+}
+.site-search{
+  position: relative;
+  display: flex;
+  vertical-align: bottom;
 }
 
 .site-search input {
+  border: none;
+  background-color: #ffe27f;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 40px;
+}
 
+
+
+.site-search input:hover {
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.site-search input:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.site-search button {
+  margin: 0;
+  padding: 0;
+  height: 47px;
+  width: 83px;
+  border: solid 2px #000000;
+  background-color: #ffe27f;
+  color: #000000;
+  font-family: "open Sans";
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.site-search button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.site-search button:active{
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffe27f url("../img/spritesheet.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: -5px -84px;
 }
 
 .header-catalog {
   display: flex;
   flex-wrap: wrap;
   width: 560px;
+}
+
+
+
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bracelets-icon {
+    width: 107px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+.sprite-camera-icon {
+    width: 71px;
+    height: 87px;
+    background-position: -122px -5px;
+}
+
+.sprite-cart {
+    width: 12px;
+    height: 12px;
+    background-position: -203px -5px;
+}
+
+.sprite-compare {
+    width: 10px;
+    height: 10px;
+    background-position: -225px -5px;
+}
+
+.sprite-credit {
+    width: 156px;
+    height: 188px;
+    background-position: -225px -25px;
+}
+
+.sprite-delivery {
+    width: 136px;
+    height: 164px;
+    background-position: -5px -223px;
+}
+
+.sprite-facebook {
+    width: 39px;
+    height: 38px;
+    background-position: -151px -223px;
+}
+
+.sprite-htmlacademy {
+    width: 27px;
+    height: 34px;
+    background-position: -200px -223px;
+}
+
+.sprite-insta-icon {
+    width: 39px;
+    height: 38px;
+    background-position: -237px -223px;
+}
+
+.sprite-monopod-icon {
+    width: 86px;
+    height: 117px;
+    background-position: -286px -223px;
+}
+
+.sprite-quadrocopters-img {
+    width: 132px;
+    height: 69px;
+    background-position: -391px -5px;
+}
+
+
+
+.sprite-twitter {
+    width: 38px;
+    height: 38px;
+    background-position: -31px -84px;
+}
+
+.sprite-user {
+    width: 13px;
+    height: 12px;
+    background-position: -79px -84px;
+}
+
+.sprite-virtualreality-icon {
+    width: 97px;
+    height: 55px;
+    background-position: -391px -84px;
+}
+
+.sprite-warranty {
+    width: 171px;
+    height: 195px;
+    background-position: -533px -5px;
 }

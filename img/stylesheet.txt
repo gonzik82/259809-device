@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bracelets-icon {
+    width: 107px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+.sprite-camera-icon {
+    width: 71px;
+    height: 87px;
+    background-position: -122px -5px;
+}
+
+.sprite-cart {
+    width: 12px;
+    height: 12px;
+    background-position: -203px -5px;
+}
+
+.sprite-compare {
+    width: 10px;
+    height: 10px;
+    background-position: -225px -5px;
+}
+
+.sprite-credit {
+    width: 156px;
+    height: 188px;
+    background-position: -225px -25px;
+}
+
+.sprite-delivery {
+    width: 136px;
+    height: 164px;
+    background-position: -5px -223px;
+}
+
+.sprite-facebook {
+    width: 39px;
+    height: 38px;
+    background-position: -151px -223px;
+}
+
+.sprite-htmlacademy {
+    width: 27px;
+    height: 34px;
+    background-position: -200px -223px;
+}
+
+.sprite-insta-icon {
+    width: 39px;
+    height: 38px;
+    background-position: -237px -223px;
+}
+
+.sprite-monopod-icon {
+    width: 86px;
+    height: 117px;
+    background-position: -286px -223px;
+}
+
+.sprite-quadrocopters-img {
+    width: 132px;
+    height: 69px;
+    background-position: -391px -5px;
+}
+
+.sprite-search {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -84px;
+}
+
+.sprite-twitter {
+    width: 38px;
+    height: 38px;
+    background-position: -31px -84px;
+}
+
+.sprite-user {
+    width: 13px;
+    height: 12px;
+    background-position: -79px -84px;
+}
+
+.sprite-virtualreality-icon {
+    width: 97px;
+    height: 55px;
+    background-position: -391px -84px;
+}
+
+.sprite-warranty {
+    width: 171px;
+    height: 195px;
+    background-position: -533px -5px;
+}
