@@ -13,6 +13,10 @@ html, body {
   display: none;
 }
 
+.text-none{
+  margin:0;
+  padding: 0;
+}
 .main-header {
   position: relative;
   display: block;
@@ -49,13 +53,23 @@ html, body {
   position: relative;
   display: flex;
   vertical-align: bottom;
+  width: 440px;
 }
+
+
 
 .site-search input {
   border: none;
   background-color: #ffe27f;
   color: rgba(0, 0, 0, 0.3);
+  padding: 0;
   padding-left: 40px;
+  padding-bottom: 10px;
+  margin-top: auto;
+  margin-bottom: 2px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 36px;
 }
 
 
@@ -65,8 +79,12 @@ html, body {
 
 }
 
-.site-search input:active {
+.site-search input:focus {
   color: rgba(0, 0, 0, 1);
+  outline: none;
+  margin-bottom: 0;
+  border-bottom: 2px solid #000000;
+
 }
 
 .site-search button {
