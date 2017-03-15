@@ -41,6 +41,7 @@ html, body {
   line-height: 48px;
   text-transform: uppercase;
   transform: translateY(-49%);
+  letter-spacing: 0.4px;
 }
 
 .main-navigation {
@@ -66,7 +67,7 @@ html, body {
   color: rgba(0, 0, 0, 0.3);
   padding: 0;
   padding-left: 37px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   margin-top: auto;
   margin-bottom: 2px;
   font-family: "Open Sans";
@@ -129,20 +130,39 @@ html, body {
   background-position: -5px -84px;
 }
 
+.user-navigation {
+  margin-left: auto;
+  margin-top: 5px;
+  display: flex;
+
+  width: 500px;
+
+}
 .pict-nav {
   text-decoration: none;
   position: relative;
   line-height: 36px;
   color: inherit;
-  padding-left: 15px;
+  padding-left: 21px;
+  padding-top: 2px;
+}
+
+.user-icon {
+  margin-right: auto;
+  padding-left: 24px;
+}
+
+.comparison-icon {
+    margin-right: 41px;
+    padding-left: 19px;
 }
 
 .pict-nav::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 3px;
   background: #ffe27f url("../img/spritesheet.png") no-repeat;
+  left:0;
+  top:30%;
 }
 
 .basket-icon::before {
@@ -156,6 +176,7 @@ html, body {
   width: 10px;
   height: 10px;
   background-position: -225px -5px;
+  transform: translateY(3px);
 
 }
 
@@ -163,14 +184,35 @@ html, body {
   width: 13px;
   height: 12px;
   background-position: -79px -84px;
-
 }
-
 
 .header-catalog {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   width: 560px;
+  padding-top: 24px;
+  margin-left: -2px;
+  list-style: none;
+}
+
+.header-catalog-name {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.header-btn-catalog {
+  color:rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+.header-catalog a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .sprite {
