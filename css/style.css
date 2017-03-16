@@ -184,29 +184,33 @@ html, body {
 }
 
 .header-catalog {
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 0;
   margin: 0;
-  width: 560px;
-  padding-top: 24px;
-
-
+  width: 541px;
+  padding-top: 28px;
 }
 
 .header-catalog-name {
   font-family: Gilroy;
   font-size: 18px;
+  line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
 }
 
 .header-btn-catalog {
   position: relative;
-  margin-left: 11px;
+  padding: 0;
+  margin-left: 8px;
   width: 22px;
   height: 22px;
+  background-color: inherit;
+  border: none;
+  display: inline-block;
 }
 
 .header-btn-catalog::before {
@@ -214,7 +218,7 @@ html, body {
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color:rgba(35, 31, 31, 0.3);
+  background-color: rgba(35, 31, 31, 0.3);
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -225,7 +229,8 @@ html, body {
   position: absolute;
   width: 2px;
   height: 16px;
-  background-color: rgba(35, 31, 31, 0.3);;
+  background-color: rgba(35, 31, 31, 0.3);
+  ;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -238,13 +243,15 @@ html, body {
   padding-right: 460px;
   width: 640px;
   left: -60px;
+  top: 54px;
   margin-bottom: 0;
   margin-top: 30px;
   background-color: #ffe393;
   display: flex;
-  min-height: 129px;
+  min-height: 130px;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
+  align-content: flex-start;
 }
 
 .header-catalog a {
@@ -252,22 +259,45 @@ html, body {
   color: inherit;
   font-family: "Open Sans";
   font-size: 15px;
-  line-height: 36px
+  line-height: inherit;
 }
 
-.items-menu{
+.items-menu {
   width: 200px;
+  line-height: 15px;
+  padding-bottom: 20px;
 }
 
-.end-line{
-  margin-right: 220px;
+.end-line:nth-last-child(2) {
+  margin-right: 200px;
 }
 
+.items-menu:nth-child(3n+2) {
+  margin-left: 40px;
+}
 
+.header-features {
+  line-height: 23px;
+  padding-top: 30px;
+  width: 499px;
+  display: flex;
+  justify-content: space-between;
+}
 
-/*.items-menu {
-  display: inline-block;
-}*/
+.header-features a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.header-features a:last-child {
+  margin-left: 73px;
+}
 
 .sprite {
   background-image: url(spritesheet.png);
