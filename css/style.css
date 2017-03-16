@@ -134,10 +134,9 @@ html, body {
   margin-left: auto;
   margin-top: 5px;
   display: flex;
-
   width: 500px;
-
 }
+
 .pict-nav {
   text-decoration: none;
   position: relative;
@@ -153,20 +152,19 @@ html, body {
 }
 
 .comparison-icon {
-    margin-right: 41px;
-    padding-left: 19px;
+  margin-right: 41px;
+  padding-left: 19px;
 }
 
 .pict-nav::before {
   content: "";
   position: absolute;
   background: #ffe27f url("../img/spritesheet.png") no-repeat;
-  left:0;
-  top:30%;
+  left: 0;
+  top: 30%;
 }
 
 .basket-icon::before {
-
   width: 12px;
   height: 12px;
   background-position: -203px -5px;
@@ -177,7 +175,6 @@ html, body {
   height: 10px;
   background-position: -225px -5px;
   transform: translateY(3px);
-
 }
 
 .user-icon::before {
@@ -187,14 +184,13 @@ html, body {
 }
 
 .header-catalog {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
   padding: 0;
   margin: 0;
   width: 560px;
   padding-top: 24px;
-  margin-left: -2px;
-  list-style: none;
+
+
 }
 
 .header-catalog-name {
@@ -203,17 +199,75 @@ html, body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
 }
 
 .header-btn-catalog {
-  color:rgba(0, 0, 0, 0.3);
-  font-size: 20px;
+  position: relative;
+  margin-left: 11px;
+  width: 22px;
+  height: 22px;
 }
 
-.header-catalog a{
+.header-btn-catalog::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color:rgba(35, 31, 31, 0.3);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.header-btn-catalog::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background-color: rgba(35, 31, 31, 0.3);;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.header-catalog-list {
+  position: absolute;
+  list-style: none;
+  padding: 0 60px;
+  padding-right: 460px;
+  width: 640px;
+  left: -60px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  background-color: #ffe393;
+  display: flex;
+  min-height: 129px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.header-catalog a {
   text-decoration: none;
   color: inherit;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 36px
 }
+
+.items-menu{
+  width: 200px;
+}
+
+.end-line{
+  margin-right: 220px;
+}
+
+
+
+/*.items-menu {
+  display: inline-block;
+}*/
 
 .sprite {
   background-image: url(spritesheet.png);
@@ -232,8 +286,6 @@ html, body {
   height: 87px;
   background-position: -122px -5px;
 }
-
-
 
 .sprite-credit {
   width: 156px;
@@ -282,7 +334,6 @@ html, body {
   height: 38px;
   background-position: -31px -84px;
 }
-
 
 .sprite-virtualreality-icon {
   width: 97px;
