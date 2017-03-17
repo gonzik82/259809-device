@@ -23,13 +23,15 @@
         <button class="btn" type="submit">Найти</button>
       </form>
       <p class="user-navigation text-none">
-        <a href="login.html" class="user-icon pict-nav">Войти</a>
-        <a href="comparison.html" class="comparison-icon pict-nav">Сравнить</a>
-        <a href="basket.html" class="basket-icon pict-nav">Корзина</a>
+        <a href="login.html" class="user-icon activ-nav pict-nav">Войти</a>
+        <a href="comparison.html" class="comparison-icon activ-nav pict-nav">Сравнить</a>
+        <a href="basket.html" class="basket-icon activ-nav pict-nav">Корзина</a>
       </p>
       <div class=header-catalog>
-        <b class="header-catalog-name">Каталог товаров </b>
-        <button class="header-btn-catalog"></button>
+        <button class="header-btn-catalog activ-nav" type="button" name="catalog">
+          <span class="header-catalog-name ">Каталог товаров </span>
+          <span class="header-icon-catalog"></span>
+        </button>
         <ul class="header-catalog-list">
           <li class="items-menu">
             <a href=virtualreality.html>Виртуальная реальность</a>
@@ -52,9 +54,9 @@
         </ul>
       </div>
       <p class="header-features text-none">
-        <a href=delivery.html>Доставка</a>
-        <a href=guarantee.html>Гарантия</a>
-        <a href=contacts.html>Контакты</a>
+        <a class="activ-nav" href=delivery.html>Доставка</a>
+        <a class="activ-nav" href=guarantee.html>Гарантия</a>
+        <a class="activ-nav" href=contacts.html>Контакты</a>
       </p>
     </nav>
   </header>
