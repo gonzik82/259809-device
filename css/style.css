@@ -326,10 +326,24 @@ html, body {
 .activ-nav:active {
   opacity: 0.3;
 }
-.slides{
+
+.main-main {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1160px;
+  min-height: 299px;
+}
+
+.slides {
   position: relative;
 }
 
+.slaider {
+  margin: 0;
+}
 
 .slider-controls {
   position: absolute;
@@ -342,20 +356,42 @@ html, body {
   z-index: 1000;
 }
 
-.slider-controls li{
-    display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
-    background:white;
-    border:3px solid white;
-    vertical-align:top;
-    border-radius:50%;
-    cursor:pointer;
+.slider-controls li {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  background: white;
+  border: 4px solid #b2b2b2;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.slider-controls .active{
-    background:#c1c1c1;
+
+.slider-controls .active {
+  border: 4px solid #000000;
 }
+
+.slider-controls a {
+  display: none;
+}
+
+.slide {
+  /*position: relative;
+  top: -150px;
+  left: 50px;*/
+  display: flex;
+}
+
+.slide-title {
+  font-family: gilroy;
+  font-size: 47px;
+  line-height: 47px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.slide-description {}
 
 .sprite {
   background-image: url(spritesheet.png);
