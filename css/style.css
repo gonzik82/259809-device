@@ -347,8 +347,8 @@ ul.slaider {
 
 .slider-controls {
   position: absolute;
-  top: 95px;
-  left: 50%;
+  top: 200px;
+  right: 30px;
   width: 200px;
   height: 10px;
   margin-left: -100px;
@@ -379,8 +379,14 @@ ul.slaider {
 .slide {
   position: relative;
   top: -111px;
-  left: 50px;
+  left: 0px;
+  padding-left: 50px;
   display: flex;
+}
+
+.slide-text{
+  padding-left: 123px;
+  width: auto;
 }
 
 .slide-text::before{
@@ -390,7 +396,7 @@ ul.slaider {
   height: 7px;
   background-color: #ffffff;
   top: 37px;
-  left:510px;
+  left:560px;
 
 }
 .slide-nomber{
@@ -402,7 +408,7 @@ ul.slaider {
   line-height: 179.2px;
   letter-spacing: 0.6px;
   top: -193px;
-  right:97px;
+  right:47px;
 }
 
 .slide-title {
@@ -412,11 +418,15 @@ ul.slaider {
   font-weight: bold;
   color: #000000;
   margin-top: 79px;
-  padding-left: 123px;
+  margin-bottom: 0;
+  padding: 0;
   letter-spacing: 0.6px;
 }
 
-
+.slide-description {
+  margin-top: 19px;
+  letter-spacing: -0.1px;
+}
 
 .sprite {
   background-image: url(spritesheet.png);
