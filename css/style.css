@@ -572,6 +572,10 @@ html, body {
   margin-top: 31px;
 }
 
+.catalog a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog a::before {
   content: "";
   display: block;
@@ -582,6 +586,14 @@ html, body {
   top:0;
 
 }
+
+.catalog a:hover::before,
+.catalog a:active::before {
+  background-color: #ffc600;
+}
+
+
+
 
 .catalog a::after {
   content: "";
@@ -594,6 +606,16 @@ html, body {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
 }
+
+.catalog a:hover::after,
+.catalog a:active::after {
+  background-color: #ffc600;
+}
+
+.catalog a:active::after{
+    opacity: 0.3;
+}
+
 .bracelets-icon::after {
   width: 107px;
   height: 65px;
@@ -615,7 +637,7 @@ html, body {
 .smartwatches-icon::after {
   width: 57px;
   height: 98px;
-  background-position: -413px -223px;
+  background-position: -413px -219px;
 
 }
 
