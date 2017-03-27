@@ -572,7 +572,7 @@ html, body {
   margin-top: 31px;
 }
 
-.catalog a:active{
+.catalog a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -583,37 +583,31 @@ html, body {
   width: 160px;
   height: 160px;
   background-color: #ffe27f;
-  top:0;
-
+  top: 0;
 }
 
-.catalog a:hover::before,
-.catalog a:active::before {
+.catalog a:hover::before, .catalog a:active::before {
   background-color: #ffc600;
 }
-
-
-
 
 .catalog a::after {
   content: "";
   display: block;
   position: absolute;
   background-color: #ffe27f;
-  top:80px;
-  left:50%;
-  transform: translate(-50% ,-50%);
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
 }
 
-.catalog a:hover::after,
-.catalog a:active::after {
+.catalog a:hover::after, .catalog a:active::after {
   background-color: #ffc600;
 }
 
-.catalog a:active::after{
-    opacity: 0.3;
+.catalog a:active::after {
+  opacity: 0.3;
 }
 
 .bracelets-icon::after {
@@ -638,7 +632,6 @@ html, body {
   width: 57px;
   height: 98px;
   background-position: -413px -219px;
-
 }
 
 .virtualreality-icon::after {
@@ -647,22 +640,44 @@ html, body {
   background-position: -391px -84px;
 }
 
-
 .quadrocopters-icon::after {
   width: 132px;
   height: 69px;
   background-position: -391px -5px;
 }
+.feature-controls label{
+  display: block;
+}
+.features {
+  display: flex;
+}
 
+.features input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  list-style-type: none;
+}
+
+.feature-name{
+  margin: 0;
+}
+
+.features-list p{
+  margin: 0;
+}
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
   display: block;
 }
-
-
-
-
 
 .sprite-credit {
   width: 156px;
@@ -694,16 +709,11 @@ html, body {
   background-position: -237px -223px;
 }
 
-
-
-
 .sprite-twitter {
   width: 38px;
   height: 38px;
   background-position: -31px -84px;
 }
-
-
 
 .sprite-warranty {
   width: 171px;

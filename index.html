@@ -169,17 +169,20 @@
     </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="feature-controls">
-        <li>
-          <a href="#delivery">Доставка</a>
-        </li>
-        <li>
-          <a href="#guarantee">Гарантия</a>
-        </li>
-        <li>
-          <a href="#credit">Кредит</a>
-        </li>
-      </ul>
+      <input type="radio" id="feature-controls-btn-1" name="feature-controls-toggle" checked>
+      <input type="radio" id="feature-controls-btn-2" name="feature-controls-toggle" checked>
+      <input type="radio" id="feature-controls-btn-3" name="feature-controls-toggle" checked>
+      <div class="feature-controls">
+        <label for="feature-controls-btn-1">
+          Доставка
+        </label>
+        <label for="feature-controls-btn-2">
+          Гарантия
+        </label>
+        <label for="feature-controls-btn-3">
+          Кредит
+        </label>
+      </div>
       <ul class="features-list">
         <li id="delivery" class="feature">
           <h3 class="feature-name">Доставка</h3>
