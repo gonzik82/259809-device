@@ -645,15 +645,83 @@ html, body {
   height: 69px;
   background-position: -391px -5px;
 }
-.feature-controls label{
-  display: block;
-}
+
 .features {
   display: flex;
+  margin-top: 85px;
 }
 
 .features input[type=radio] {
   position: absolute;
+  opacity: 0;
+}
+
+.feature-controls {
+  padding-top: 80px;
+  position: relative;
+
+}
+
+.feature-controls::after{
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  top:0;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+.feature-controls label {
+  display: block;
+  width: 160px;
+  position: relative;
+  padding-top: 4.5px;
+  padding-left: 6px;
+  padding-right: 110px;
+  margin-bottom: 25px;
+  margin-right: 8px;
+  height: 35px;
+  text-align:center;
+  font-family: gilroy;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000000;
+  z-index: 10;
+  tabindex:0;
+}
+
+.feature-controls-btn-1:checked ~ .feature-controls label:nth-child(1),
+.feature-controls-btn-2:checked ~ .feature-controls label:nth-child(2),
+.feature-controls-btn-3:checked ~ .feature-controls label:nth-child(3),
+.feature-controls label:active{
+  background-color:#000000;
+  color: #ffe27f;
+}
+
+
+.feature-controls label::after{
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #ffc600;
+  top:50%;
+  left: 0;
+  transform: translateY(-50%);
+    z-index: -2;
+}
+
+.feature-controls label:hover::after{
+  height: 40px;
+}
+.feature-controls-btn-1:checked ~ .feature-controls label:nth-child(1)::after,
+.feature-controls-btn-2:checked ~ .feature-controls label:nth-child(2)::after,
+.feature-controls-btn-3:checked ~ .feature-controls label:nth-child(3)::after,
+.feature-controls label:active::after{
   opacity: 0;
 }
 
@@ -666,13 +734,14 @@ html, body {
   list-style-type: none;
 }
 
-.feature-name{
+.feature-name {
   margin: 0;
 }
 
-.features-list p{
+.features-list p {
   margin: 0;
 }
+
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
