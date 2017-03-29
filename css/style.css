@@ -646,13 +646,11 @@ html, body {
   background-position: -391px -5px;
 }
 
-
 .features {
   display: flex;
   position: relative;
   margin-top: 85px;
   z-index: 10;
-
 }
 
 .features::before {
@@ -660,12 +658,11 @@ html, body {
   position: absolute;
   width: 1445px;
   height: 288px;
-  bottom:0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   background-color: #e6e6e6;
   z-index: -5;
-
 }
 
 .features input[type=radio] {
@@ -676,16 +673,15 @@ html, body {
 .feature-controls {
   padding-top: 80px;
   position: relative;
-
 }
 
-.feature-controls::after{
+.feature-controls::after {
   position: absolute;
   content: "";
   width: 7px;
   height: 319px;
   background-color: #000000;
-  top:0;
+  top: 0;
   right: 0;
   transform: translateX(-50%);
 }
@@ -700,7 +696,7 @@ html, body {
   margin-bottom: 25px;
   margin-right: 8px;
   height: 35px;
-  text-align:center;
+  text-align: center;
   font-family: gilroy;
   font-weight: bold;
   font-size: 18px;
@@ -708,56 +704,104 @@ html, body {
   text-transform: uppercase;
   color: #000000;
   z-index: 10;
-  tabindex:0;
+  tabindex: 0;
 }
 
-.feature-controls-btn-1:checked ~ .feature-controls label:nth-child(1),
-.feature-controls-btn-2:checked ~ .feature-controls label:nth-child(2),
-.feature-controls-btn-3:checked ~ .feature-controls label:nth-child(3),
-.feature-controls label:active
-  {
-  background-color:#000000;
+.feature-controls-btn-1:checked~.feature-controls label:nth-child(1), .feature-controls-btn-2:checked~.feature-controls label:nth-child(2), .feature-controls-btn-3:checked~.feature-controls label:nth-child(3), .feature-controls label:active {
+  background-color: #000000;
   color: #ffe27f;
 }
 
-
-.feature-controls label::after{
+.feature-controls label::after {
   content: "";
   position: absolute;
   width: 160px;
   height: 8px;
   background-color: #ffc600;
-  top:50%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
-    z-index: -2;
+  z-index: -2;
 }
 
-.feature-controls label:hover::after{
+.feature-controls label:hover::after {
   height: 40px;
 }
-.feature-controls-btn-1:checked ~ .feature-controls label:nth-child(1)::after,
-.feature-controls-btn-2:checked ~ .feature-controls label:nth-child(2)::after,
-.feature-controls-btn-3:checked ~ .feature-controls label:nth-child(3)::after,
-.feature-controls label:active::after{
+
+.feature-controls-btn-1:checked~.feature-controls label:nth-child(1)::after, .feature-controls-btn-2:checked~.feature-controls label:nth-child(2)::after, .feature-controls-btn-3:checked~.feature-controls label:nth-child(3)::after, .feature-controls label:active::after {
   opacity: 0;
 }
 
 .features-list {
   padding: 0;
   margin: 0;
+  padding-left: 113px;
+  min-height: 388px;
 }
 
-.features-list li {
+.feature {
   list-style-type: none;
+  padding-top: 82px;
+  padding-right: 257px;
+  padding-bottom: 7px;
+  position: absolute;
+  opacity: 0;
+}
+
+.feature-controls-btn-1:checked ~ .features-list .feature:nth-child(1),
+.feature-controls-btn-2:checked ~ .features-list .feature:nth-child(2),
+.feature-controls-btn-3:checked ~ .features-list .feature:nth-child(3)
+{
+  position: relative;
+  opacity: 1;
+}
+
+
+.feature::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.delivery::after {
+  width: 136px;
+  height: 164px;
+  background-position: -5px -223px;
+}
+
+.guarantee::after{
+  width: 171px;
+  height: 195px;
+  background-position: -533px -5px;
+}
+
+.credit::after{
+  width: 156px;
+  height: 188px;
+  background-position: -225px -25px;
 }
 
 .feature-name {
+  display: block;
   margin: 0;
+  padding-left: 1px;
+  font-family: gilroy;
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
 }
 
 .features-list p {
+  display: block;
   margin: 0;
+  margin-top: 40px;
+  font-size: 15px;
+  letter-spacing: -0.05px;
+  width: 437px;
 }
 
 .sprite {
@@ -770,12 +814,6 @@ html, body {
   width: 156px;
   height: 188px;
   background-position: -225px -25px;
-}
-
-.sprite-delivery {
-  width: 136px;
-  height: 164px;
-  background-position: -5px -223px;
 }
 
 .sprite-facebook {
@@ -800,10 +838,4 @@ html, body {
   width: 38px;
   height: 38px;
   background-position: -31px -84px;
-}
-
-.sprite-warranty {
-  width: 171px;
-  height: 195px;
-  background-position: -533px -5px;
 }
