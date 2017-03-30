@@ -10,7 +10,14 @@ html, body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
 .text-none {
@@ -803,6 +810,28 @@ html, body {
   letter-spacing: -0.05px;
   width: 437px;
 }
+.barands-list {
+  display: flex;
+  margin-top: 94px;
+
+}
+
+.barands-list a {
+  margin-right: 39px;
+}
+
+.barands-list-img{
+  display: block;
+  opacity: 0.2;
+  filter: grayscale(100%);
+
+}
+
+.barands-list-img:hover{
+  opacity: 1;
+  filter: none;
+}
+
 
 .sprite {
   background-image: url(spritesheet.png);
