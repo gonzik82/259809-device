@@ -11,13 +11,13 @@ html, body {
 
 .visually-hidden {
   position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .text-none {
@@ -755,14 +755,10 @@ html, body {
   opacity: 0;
 }
 
-.feature-controls-btn-1:checked ~ .features-list .feature:nth-child(1),
-.feature-controls-btn-2:checked ~ .features-list .feature:nth-child(2),
-.feature-controls-btn-3:checked ~ .features-list .feature:nth-child(3)
-{
+.feature-controls-btn-1:checked~.features-list .feature:nth-child(1), .feature-controls-btn-2:checked~.features-list .feature:nth-child(2), .feature-controls-btn-3:checked~.features-list .feature:nth-child(3) {
   position: relative;
   opacity: 1;
 }
-
 
 .feature::after {
   content: "";
@@ -780,13 +776,13 @@ html, body {
   background-position: -5px -223px;
 }
 
-.guarantee::after{
+.guarantee::after {
   width: 171px;
   height: 195px;
   background-position: -533px -5px;
 }
 
-.credit::after{
+.credit::after {
   width: 156px;
   height: 188px;
   background-position: -225px -25px;
@@ -810,28 +806,59 @@ html, body {
   letter-spacing: -0.05px;
   width: 437px;
 }
+
 .barands-list {
   display: flex;
   margin-top: 94px;
-
 }
 
 .barands-list a {
   margin-right: 39px;
 }
 
-.barands-list-img{
+.barands-list-img {
   display: block;
   opacity: 0.2;
   filter: grayscale(100%);
-
 }
 
-.barands-list-img:hover{
+.barands-list-img:hover {
   opacity: 1;
   filter: none;
 }
 
+.about-us-contacts {
+  display: flex;
+  margin-top: 100px;
+}
+
+.about-us-contacts section {
+  width: 560px;
+}
+
+.about-us-contacts p {
+  letter-spacing: -0.3px;
+  margin-top: 31px;
+}
+
+.about-us p {
+  width: 460px;
+
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.about-us-contacts-title {
+  font-size: 47px;
+  font-family: gilroy;
+  font-weight: bold;
+  padding-top: 15px;
+  letter-spacing: 0.4px;
+  margin-left: -2px;
+  margin-bottom: 52px;
+}
 
 .sprite {
   background-image: url(spritesheet.png);
