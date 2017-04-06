@@ -843,7 +843,6 @@ html, body {
 
 .about-us p {
   width: 480px;
-
 }
 
 .contacts {
@@ -861,10 +860,10 @@ html, body {
 }
 
 .transport-companies {
-list-style: none;
-padding: 0;
-margin: 0;
-margin-top: 64px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 64px;
 }
 
 .transport-companies li {
@@ -874,21 +873,19 @@ margin-top: 64px;
   line-height: 40px;
   padding-left: 35px;
   position: relative;
-
 }
 
 .transport-companies li::before {
   content: "";
   position: absolute;
-  left:0;
-  top:50%;
+  left: 0;
+  top: 50%;
   width: 4px;
   height: 4px;
   border: solid 3px #b2b2b2;
   border-radius: 50%;
   transform: translateY(-50%);
 }
-
 
 .btn {
   position: relative;
@@ -903,8 +900,6 @@ margin-top: 64px;
   text-transform: uppercase;
   margin-top: 65px;
   text-align: center;
-
-
   width: 260px;
   z-index: 2;
 }
@@ -933,10 +928,26 @@ margin-top: 64px;
   height: 40px;
 }
 
-.contacts img{
+.contacts img {
   margin-top: 24px;
   margin-bottom: 7px;
 }
+
+.footer-logo {
+  padding: 0;
+  margin: 0;
+
+  top: 0;
+  left: 56px;
+  font-family: gilroy;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  transform: translateY(-49%);
+  letter-spacing: 0.4px;
+}
+
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
