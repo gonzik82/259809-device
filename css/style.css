@@ -933,16 +933,43 @@ html, body {
   margin-bottom: 7px;
 }
 
+.line{
+  position: relative;
+}
+.line::after{
+content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: black;
+  top:0;
+  left:0;
+  transform: translateY(-100%);
+}
+
+
+.main-footer{
+background-color: #444444;
+color:#ffffff;
+
+margin-top:93px;
+}
+
+.centering-block-footer{
+width: 1160px;
+margin: 0 auto;
+display: flex;
+}
 .footer-logo {
   padding: 0;
   margin: 0;
-
   top: 0;
   left: 56px;
   font-family: gilroy;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
+  color:#ffe27f;
   text-transform: uppercase;
   transform: translateY(-49%);
   letter-spacing: 0.4px;
