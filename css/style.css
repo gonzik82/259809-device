@@ -663,7 +663,7 @@ html, body {
 .features::before {
   content: "";
   position: absolute;
-  width: 1445px;
+  width: 1349px;
   height: 288px;
   bottom: 0;
   left: 50%;
@@ -948,7 +948,7 @@ html, body {
   transform: translateY(-100%);
 }
 
-.main-footer{
+.main-footer {
   background-color: #444444;
   color: #ffffff;
   margin-top: 93px;
@@ -962,20 +962,22 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
-.footer-left{
+
+.footer-left {
   min-height: 184px;
   position: relative;
 }
 
-.footer-left::after{
+.footer-left::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 7px;
-  left:0;
+  left: 0;
   bottom: 0;
   background-color: #ffe27f;
 }
+
 .footer-logo {
   padding: 0;
   margin: 0;
@@ -990,15 +992,16 @@ html, body {
 }
 
 .footer-contacts {
-  margin-top:20px;
+  margin-top: 20px;
   letter-spacing: -0.3px;
 }
-.footer-center{
+
+.footer-center {
   width: 440px;
   padding-top: 55px;
 }
 
-.footer-navigation{
+.footer-navigation {
   font-family: gilroy;
   font-weight: bold;
   font-size: 18px;
@@ -1008,19 +1011,51 @@ html, body {
   letter-spacing: 3.4px;
   margin-left: -1px;
   margin-right: 2px;
-
 }
 
-.footer-navigation a{
+.footer-navigation a {
   color: inherit;
   text-decoration: none;
 }
 
-.social-btn {
-  display: block;
-  
+.footer-social {
+  display: flex;
+  margin-top: 57px;
+  padding-right: 17px;
 }
 
+.social-btn {
+  display: block;
+  width: 39px;
+  height: 38px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+}
+
+.social-btn-fb {
+  background-position: -151px -223px;
+  margin-left: auto;
+}
+
+.social-btn-tw {
+  background-position: -31px -84px;
+  margin-right: auto;
+}
+
+.social-btn-inst {
+  background-position: -237px -223px;
+  margin: 0 16px;
+}
+
+.footer-user-navigation {
+  margin-top: 0px;
+
+}
+
+.footer-user-navigation .pict-nav::before {
+  background-color: inherit;
+  opacity: 0.5;
+}
 
 .sprite {
   background-image: url(spritesheet.png);
@@ -1028,32 +1063,11 @@ html, body {
   display: block;
 }
 
-.sprite-credit {
-  width: 156px;
-  height: 188px;
-  background-position: -225px -25px;
-}
 
-.sprite-facebook {
-  width: 39px;
-  height: 38px;
-  background-position: -151px -223px;
-}
+
 
 .sprite-htmlacademy {
   width: 27px;
   height: 34px;
   background-position: -200px -223px;
-}
-
-.sprite-insta-icon {
-  width: 39px;
-  height: 38px;
-  background-position: -237px -223px;
-}
-
-.sprite-twitter {
-  width: 38px;
-  height: 38px;
-  background-position: -31px -84px;
 }
