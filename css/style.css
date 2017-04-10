@@ -961,6 +961,7 @@ html, body {
   padding-top: 61px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-left {
@@ -999,6 +1000,7 @@ html, body {
 .footer-center {
   width: 440px;
   padding-top: 55px;
+  padding-left: 136px;
 }
 
 .footer-navigation {
@@ -1030,6 +1032,15 @@ html, body {
   height: 38px;
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.social-btn:hover  {
+  opacity: 0.6;
+}
+
+.social-btn:active {
+  opacity: 0.1;
 }
 
 .social-btn-fb {
@@ -1049,25 +1060,109 @@ html, body {
 
 .footer-user-navigation {
   margin-top: 0px;
+}
+.footer-user-navigation a{
+  color: rgba(255, 255, 255, 0.7);
+}
 
+.footer-user-navigation a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-navigation a:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-user-navigation .pict-nav::before {
   background-color: inherit;
-  opacity: 0.5;
 }
 
-.sprite {
-  background-image: url(spritesheet.png);
-  background-repeat: no-repeat;
+.footer-basket-icon {
+  padding-left: 19px;
+}
+
+
+
+.footer-comparison-icon {
+  margin-right: 36px;
+}
+
+.footer-basket-icon::before {
+  width: 12px;
+  height: 12px;
+  background-position: -529px -241px;
+}
+
+.footer-basket-icon:hover::before {
+  background-position: -529px -257px;
+}
+
+.footer-basket-icon:active::before {
+  background-position: -529px -257px;
+  opacity: 0.3;
+}
+
+.footer-user-icon {
+  margin-right: 38px;
+  padding-left: 25px;
+}
+
+.footer-comparison-icon::before {
+  width: 13px;
+  height: 12px;
+  background-position: -549px -241px;
+}
+
+.footer-comparison-icon:hover::before {
+  background-position: -549px -258px;
+}
+
+.footer-comparison-icon:active::before {
+  background-position: -549px -258px;
+  opacity: 0.3;
+}
+
+.footer-user-icon::before {
+  width: 13px;
+  height: 12px;
+  background-position: -506px -241px;
+}
+
+.footer-user-icon:hover::before {
+  background-position: -506px -257px;
+}
+
+.footer-user-icon:active::before {
+  background-position: -506px -257px;
+  opacity: 0.3;
+}
+
+.footer-tel {
+  text-align: right;
+  margin-top: 34px;
+}
+
+.footer-tel a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.develop-btn {
   display: block;
-}
-
-
-
-
-.sprite-htmlacademy {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
   width: 27px;
   height: 34px;
-  background-position: -200px -223px;
+  background-position: -200px -260px;
+  margin-left: auto;
+  margin-top: 63px;
+}
+
+.develop-btn:hover {
+  background-position: -200px -299px;
+}
+
+.develop-btn:active {
+  background-position: -200px -299px;
+  opacity: 0.3;
 }
