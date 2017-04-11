@@ -36,6 +36,15 @@ html, body {
   min-height: 299px;
 }
 
+.sub-page-header {
+  min-height: 186px;
+}
+
+.logo {
+  color:inherit;
+  text-decoration: none;
+}
+
 .main-header h1 {
   padding: 0;
   margin: 0;
@@ -50,6 +59,16 @@ html, body {
   transform: translateY(-49%);
   letter-spacing: 0.4px;
 }
+
+.sub-page-header h1:hover{
+  color:#444444
+}
+
+.sub-page-header h1:active{
+  color:#666666
+}
+
+
 
 .main-navigation {
   display: flex;
@@ -992,6 +1011,13 @@ html, body {
   letter-spacing: 0.4px;
 }
 
+.footer-logo-sub-page:hover{
+  color:#ffc600;
+}
+.footer-logo-sub-page:active{
+  color:rgba(255, 198, 0, 0.3);
+}
+
 .footer-contacts {
   margin-top: 20px;
   letter-spacing: -0.3px;
@@ -1080,8 +1106,6 @@ html, body {
 .footer-basket-icon {
   padding-left: 19px;
 }
-
-
 
 .footer-comparison-icon {
   margin-right: 36px;
